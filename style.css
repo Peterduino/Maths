@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "Desi";
+  src: url("/Fonts/DESIGNER.otf");
+}
+
+@font-face {
+  font-family: "Cool";
+  src: url("/Fonts/coolvetica.otf");
+}
+
+:root {
+  --back: rgb(5, 10, 19);
+  --head: rgb(5, 10, 19);
+  --foot: rgb(4, 9, 10);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  background-image: url("/Images/dalle6.png");
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: var(--back);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  color: white;
+  font-size: 30px;
+  background-color: var(--head);
+}
+
+.cours {
+
+  color: white;
+  font-family: Cool;
+  margin-left: 50px;
+  margin-right: 400px;
+  font-size: 20px;
+}
+
+.half-page {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+  overflow-y: auto;
+  color: white; /* Couleur du texte en blanc */
+}
+
+.tree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.node {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ExoShell {
+  margin-left: 50px;
+  width: 950px;
+  height: 500px;
+  border-radius: 10px;
+}
+
+
+h2 {
+
+  font-size:25px;
+  font-family: Cool;
+}
+
+h3 {
+
+  color: white;
+  font-family: Cool;
+  font-size: 75px;
+  text-align: left;
+  vertical-align: middle;
+  margin-left: 200px;
+}
+
+h4 {
+
+  color: white;
+  font-family: Cool;
+  font-size: 30px;
+  text-align: left;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+
+.about, .news {
+
+  color: rgb(200, 200, 200);
+  font-family: Cool;
+  font-size: 23px;
+  margin-left: 200px;
+  margin-right: 700px;
+}
+
+/* .news{
+  width: auto;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 150px;
+} */
+
+button {
+
+  height: 50 px;
+  width: auto;
+  font-family: Cool;
+  
+}
+
+.separador {
+	margin-top: 1px;
+  overflow: hidden;
+  height: 50px;
+}
+
+.separador:after {
+  content: '';
+  display: block;
+  width: 90%;
+  height: 30px;
+	margin: -30px auto 0;
+  border-radius: 120px / 10px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.6);
+}
+
+
+
+.logo {
+  scale: 0.75;
+  overflow: hidden;
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+
+.logo:hover {
+  transform: rotate(3deg) scale(1.1);
+  -webkit-transform: rotate(3deg);
+  transform: scale(1.1);
+}
+
+.dropdown1,
+.dropdown2,
+.dropdown3,
+.dropdown4 {
+  display: flex;
+}
+
+.dropbtn1,
+.dropbtn2,
+.dropbtn3,
+.dropbtn4 {
+  background-color: var(--head);
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  border: none;
+  margin-left: 5px;
+  margin-top: 0px;
+  font-family: Cool;
+  text-decoration: none;
+}
+
+.dropdown-content1,
+.dropdown-content2,
+.dropdown-content3,
+.dropdown-content4 {
+  display: none;
+  position: absolute; /*Change to relative and enjoy the view xD*/
+  background-color: #f1f1f1;
+  border-radius: 5%;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 52px;
+  margin-left: 15px;
+  font-family: Cool;
+}
+
+.dropdown-content1 a,
+.dropdown-content2 a,
+.dropdown-content3 a,
+.dropdown-content4 a {
+  color: black;
+  padding: 5px 16px;
+  font-size: medium;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content1 a:hover,
+.dropdown-content2 a:hover,
+.dropdown-content3 a:hover,
+.dropdown-content4 a:hover {
+  background-color: #ddd;
+  border-radius: 5%;
+}
+
+.dropdown1:hover .dropdown-content1,
+.dropdown2:hover .dropdown-content2,
+.dropdown3:hover .dropdown-content3,
+.dropdown4:hover .dropdown-content4 {
+  display: block;
+}
+
+.dropdown1:hover .dropbtn1,
+.dropdown2:hover .dropbtn2,
+.dropdown3:hover .dropbtn3,
+.dropdown4:hover .dropbtn4 {
+  color: aquamarine;
+}
+
+/* .dropbtn4 a:link, 
+.dropbtn4 a:visited, 
+.dropbtn4 a:hover, 
+.dropbtn4 a:active {
+ color: rgb(174, 174, 174);
+ font-style: normal;
+} */
+
+.footer {
+  position: relative;
+  background-color: var(--foot);
+  color: #fff;
+  font-family: Cool;
+  text-align: center;
+}
+
+ .footer a:link,      .news a:link,
+ .footer a:visited,   .news a:visited,
+ .footer a:hover,     .news a:hover,
+ .footer a:active,    .news a:active {
+  color: rgb(174, 174, 174);
+}
+
+
