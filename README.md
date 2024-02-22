@@ -4,3 +4,6 @@ Here is a pretty basic website, that I created for my classmates (actually they 
 
 I put it here for you to have those exercices, even if it's in french... I think the features of the website are pretty cool, like the way I found to integrate the python shell into the page.
 I assume the look is pretty Github homepage -ich, but I'm not a web designer, and I recreated everythink...
+
+You can run the current version here :
+https://pi-t-maths.netlify.app/
